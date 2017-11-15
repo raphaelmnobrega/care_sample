@@ -17,8 +17,8 @@
 		<link rel="shortcut icon" href="assets/ico/favicon.ico">
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">		
+		<script src="assets/js/plotly-latest.min.js"></script>
 	</head>
 
 	<body>
@@ -157,106 +157,20 @@
 						    		</div>
 						    	</div>
 						    </div>
-							<h3>Chart Using Progress Bars </h3>
+						    <h3>Latest Transaction</h3>
+							<br/>							
+							<table class="table table-bordered">
+								<tr>
+									<td><div id="graph"></div></td>
+								</tr>								
+							</table>
+							<h3>Cancer Cases per Hospital</h3>
 							<br/>
 							<table class="table table-bordered">
 								<tr>
 									<td><div id="myDiv"></div></td>
 								</tr>								
-							</table>
-							<h3>Latest Transaction</h3>
-							<br/>
-							<form>
-							<table class="table table-striped table-bordered ">
-								<thead>
-									<tr>
-										<th>#</th>
-										<th>Date</th>
-										<th>Description</th>
-										<th>Debit</th>
-										<th>Credit</th>
-										<th>Action</th>
-										<th>
-										<input type="checkbox" class="check_all"/>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td width="15%"><a href="#" class="tooltip-right" title="Put Some Information Here"><i class="icon-calendar"></i> May 1, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #1 </td>
-										<td>$100.00</td>
-										<td>$50.00</td>
-										<td width="15%">
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td width="1%">
-										<input type="checkbox"/>
-										</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td><a href="#" class="tooltip-left" title="Put Some Information Here"><i class="icon-calendar"></i> May 2, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #2</td>
-										<td>$200.00</td>
-										<td>$40.00</td>
-										<td>
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td>
-										<input type="checkbox"/>
-										</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td><a href="#" class="tooltip-right" title="Put Some Information Here"><i class="icon-calendar"></i> May 3, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #3</td>
-										<td>$300.00</td>
-										<td>$30.00</td>
-										<td>
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td>
-										<input type="checkbox"/>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="pull-right">
-								<button type="button" class="delete btn btn-warning">
-									<i class="icon-white icon-trash"></i> Delete Checked Box
-								</button>
-							</div>
-							<div class="pagination">
-								<ul>
-									<li>
-										<a href="#">&laquo;</a>
-									</li>
-									<li class="active">
-										<a href="#">1</a>
-									</li>
-									<li>
-										<a href="#">2</a>
-									</li>
-									<li>
-										<a href="#">3</a>
-									</li>
-									<li>
-										<a href="#">4</a>
-									</li>
-									<li>
-										<a href="#">&raquo;</a>
-									</li>
-								</ul>
-							</div>
-							</form>
+							</table>							
 						</div>
 					</div>
 				</div>
@@ -291,29 +205,29 @@
         type: 'scattergeo',
         mode: 'markers+text',
         text: [
-            'London Regional', 'Grand River Regional', 'Juravinski', 'Carlo Fidani Regional', 'Odette',
-            'Princess Margaret', 'Stronach Regional', 'R.S. McLaughlin Durham Regional Cancer Centre',
+            'London Regional', 'Grand River Regional', 'Juravinski Cancer Centre', 'Carlo Fidani Regional', 'Odette Cancer Centre',
+            'Princess Margaret', 'Southlake Regional Health Centre', 
             'Cancer Centre of Southeastern Ontario', 'The Ottawa Hospital Cancer Centre', 
             'Simcoe Muskoka Regional Cancer Centre', 'Northeast Cancer Centre', 'Regional Cancer Care Northwest'
         ],
         lon: [
-            -73.57, -79.24, -123.06, -114.1, -113.28,
-            -75.43, -63.57, -123.21, -97.13, -104.6, -123.21, -97.13, -104.6
+            -81.227970, -80.512337, -79.846150, -79.702798, -79.377493,
+            -79.390014, -79.452425, -76.491676, -75.647947, -79.661093, -80.995774, -89.269605
         ],
         lat: [
-            45.5, 43.4, 49.13, 51.1, 53.34, 45.24,
-            44.64, 48.25, 49.89, 50.45, 48.25, 49.89, 50.45
+            42.959748, 43.456454, 43.239889, 43.557726, 43.720618, 43.658205,
+            44.060668, 44.223064, 45.400749, 44.414109, 46.468666, 48.425427
         ],
         marker: {
             size: [
             		20, 30, 15, 10, 35,
             		25, 35, 20, 15, 30,
-            		30, 15, 35
+            		30, 15
             ],
             color: [
-                '#bebada', '#fdb462', '#fb8072', '#d9d9d9', '#bc80bd',
-                '#b3de69', '#8dd3c7', '#80b1d3', '#fccde5', '#ffffb3',
-                '#80b1d3', '#fccde5', '#ffffb3'
+                '#bebada', '#fdb462', '#fb8072', '#27442e', '#bc80bd',
+                '#b3de69', '#8dd3c7', '#80b1d3', '#d63727', '#485f8c',
+                '#273144', '#b657c3'
             ],
             line: {
                 width: 1
@@ -323,27 +237,24 @@
         textposition: [
             'top right', 'top left', 'top center', 'bottom right', 'top right',
             'top left', 'bottom right', 'bottom left', 'top right', 'top right',
-            'bottom left', 'top right', 'top right'
+            'bottom left', 'top right'
         ],
     }];
 
-    var layout = {
-        title: 'Cancer Cases per Hospital',
+    var layout = {        
         font: {
             family: 'Droid Serif, serif',
-            size: 6
-        },
-        titlefont: {
-            size: 16
-        },
+            size: 8
+        },       
         geo: {
             scope: 'north america',
             resolution: 50,
+
             lonaxis: {
-                'range': [-130, -55]
+                'range': [-90, -74]
             },
             lataxis: {
-                'range': [40, 70]
+                'range': [41, 49]
             },
             showrivers: true,
             rivercolor: '#fff',
@@ -354,8 +265,175 @@
             countrycolor: '#d3d3d3',
             countrywidth: 1.5,
             subunitcolor: '#d3d3d3'
-        }
+        }        
     };
 
     Plotly.newPlot('myDiv', data, layout);
+</script>
+
+<script type="text/javascript">
+
+Plotly.d3.csv('gapminderDataFiveYear.csv', function (err, data) {
+  // Create a lookup table to sort and regroup the columns of data,
+  // first by year, then by continent:
+  var lookup = {};
+  function getData(year, continent) {
+    var byYear, trace;
+    if (!(byYear = lookup[year])) {;
+      byYear = lookup[year] = {};
+    }
+     // If a container for this year + continent doesn't exist yet,
+     // then create one:
+    if (!(trace = byYear[continent])) {
+      trace = byYear[continent] = {
+        x: [],
+        y: [],
+        id: [],
+        text: [],
+        marker: {size: []}
+      };
+    }
+    return trace;
+  }
+
+  // Go through each row, get the right trace, and append the data:
+  for (var i = 0; i < data.length; i++) {
+    var datum = data[i];
+    var trace = getData(datum.year, datum.continent);
+    trace.text.push(datum.country);
+    trace.id.push(datum.country);
+    trace.x.push(datum.lifeExp);
+    trace.y.push(datum.gdpPercap);
+    trace.marker.size.push(datum.pop);
+  }
+
+  // Get the group names:
+  var years = Object.keys(lookup);
+  // In this case, every year includes every continent, so we
+  // can just infer the continents from the *first* year:
+  var firstYear = lookup[years[0]];
+  var continents = Object.keys(firstYear);
+
+  // Create the main traces, one for each continent:
+  var traces = [];
+  for (i = 0; i < continents.length; i++) {
+    var data = firstYear[continents[i]];
+     // One small note. We're creating a single trace here, to which
+     // the frames will pass data for the different years. It's
+     // subtle, but to avoid data reference problems, we'll slice 
+     // the arrays to ensure we never write any new data into our
+     // lookup table:
+    traces.push({
+      name: continents[i],
+      x: data.x.slice(),
+      y: data.y.slice(),
+      id: data.id.slice(),
+      text: data.text.slice(),
+      mode: 'markers',
+      marker: {
+        size: data.marker.size.slice(),
+        sizemode: 'area',
+        sizeref: 200000
+      }
+    });
+  }
+
+  // Create a frame for each year. Frames are effectively just
+  // traces, except they don't need to contain the *full* trace
+  // definition (for example, appearance). The frames just need
+  // the parts the traces that change (here, the data).
+  var frames = [];
+  for (i = 0; i < years.length; i++) {
+    frames.push({
+      name: years[i],
+      data: continents.map(function (continent) {
+        return getData(years[i], continent);
+      })
+    })
+  }
+    
+  // Now create slider steps, one for each frame. The slider
+  // executes a plotly.js API command (here, Plotly.animate).
+  // In this example, we'll animate to one of the named frames
+  // created in the above loop.
+  var sliderSteps = [];
+  for (i = 0; i < years.length; i++) {
+    sliderSteps.push({
+      method: 'animate',
+      label: years[i],
+      args: [[years[i]], {
+        mode: 'immediate',
+        transition: {duration: 300},
+        frame: {duration: 300, redraw: false},
+      }]
+    });
+  }
+  
+  var layout = {
+    xaxis: {
+      title: 'Age of the Patient',
+      range: [30, 85]
+    },
+    yaxis: {
+      title: 'Years of Survival',
+      type: 'log'
+    },
+    hovermode: 'closest',
+     // We'll use updatemenus (whose functionality includes menus as
+     // well as buttons) to create a play button and a pause button.
+     // The play button works by passing `null`, which indicates that
+     // Plotly should animate all frames. The pause button works by
+     // passing `[null]`, which indicates we'd like to interrupt any
+     // currently running animations with a new list of frames. Here
+     // The new list of frames is empty, so it halts the animation.
+    updatemenus: [{
+      x: 0,
+      y: 0,
+      yanchor: 'top',
+      xanchor: 'left',
+      showactive: false,
+      direction: 'left',
+      type: 'buttons',
+      pad: {t: 87, r: 10},
+      buttons: [{
+        method: 'animate',
+        args: [null, {
+          mode: 'immediate',
+          fromcurrent: true,
+          transition: {duration: 300},
+          frame: {duration: 500, redraw: false}
+        }],
+        label: 'Play'
+      }, {
+        method: 'animate',
+        args: [[null], {
+          mode: 'immediate',
+          transition: {duration: 0},
+          frame: {duration: 0, redraw: false}
+        }],
+        label: 'Pause'
+      }]
+    }],
+     // Finally, add the slider and use `pad` to position it
+     // nicely next to the buttons.
+    sliders: [{
+      pad: {l: 130, t: 55},
+      currentvalue: {
+        visible: true,
+        prefix: 'Year:',
+        xanchor: 'right',
+        font: {size: 20, color: '#666'}
+      },
+      steps: sliderSteps
+    }]
+  };
+  
+  // Create the plot:
+  Plotly.plot('graph', {
+    data: traces,
+    layout: layout,
+    frames: frames,
+  });
+});
+
 </script>
