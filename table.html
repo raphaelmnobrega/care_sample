@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Aqueena Template | Table</title>
+		<title>Care Project | Map</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -17,13 +17,14 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+		<script src="assets/js/plotly-latest.min.js"></script>
 	</head>
 	<body>
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
 					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
-					<a class="brand" href="./dash.html">AQUEENA</a>
+					<a class="brand" href="./dash.html">CARE</a>
 					<div class="nav-collapse">
 						<ul class="nav">
 							<li class="active">
@@ -94,216 +95,15 @@
 				<div class="span12">
 					<div class="page-header-top">
 						<div class="container">
-							<h1>Table <small>displayed some information </small></h1>
+							<h1>Map <small>sample of map chart </small></h1>
 						</div>
 					</div>
 					<div class="page-header subnav">
-						<div class="pull-right">
-							<div class="btn-group">
-								<a href="./form.html" class="btn btn-warning"><i class="icon-plus-sign icon-white"></i> New</a>
-								<button class="btn btn-warning">
-									<i class="icon-print icon-white"></i> Save Page As
-								</button>
-								<button class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-									<span class="caret"></span>
-								</button>
-								<ul class="dropdown-menu">
-									<li>
-										<a href="#"><i class="pull-right icon-eye-open"></i> HTML</a>
-									</li>
-									<li>
-										<a href="#"><i class="pull-right icon-download"></i> PDF</a>
-									</li>
-									<li>
-										<a href="#"><i class="pull-right icon-download"></i>Spreadsheet</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<h3>Table List</h3>
+						
+						<h3>Map Chart Sample</h3>
 					</div>
 					<div class="row-fluid">
-						<div class="span3">
-							<ul class="nav nav-tabs nav-stacked">
-								<li>
-									<a href="./dash.html" >Dashboard <span class="label label-warning pull-right">1</span></a>
-								</li>
-								<li class="active">
-									<a href="./table.html">Table</a>
-								</li>
-								<li>
-									<a href="./form.html">Form</a>
-								</li>
-								<li>
-									<a href="./tab.html">Tabular &amp; Accordion</a>
-								</li>
-							</ul>
-							<ul class="nav nav-tabs nav-stacked">
-							
-								<li>
-									<a href="./account.html">User Account</a>
-								</li>
-								<li>
-									<a href="./change_password.html">Change Password</a>
-								</li>
-							</ul>
-						    <form class="well form-search">
-							    <input type="text" class="search-query" style="width:200px" placeholder="type and hit the enter key">
-						    </form>									
-						</div>
-						<div class="span9">
-							<form>	
-							<table class="table table-striped table-bordered ">
-								<thead>
-									<tr>
-										<th>#</th>
-										<th>Date</th>
-										<th>Description</th>
-										<th>Debit</th>
-										<th>Credit</th>
-										<th>Action</th>
-										<th>
-										<input type="checkbox" class="check_all"/>
-										</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td width="15%"><a href="#" class="tooltip-right" title="Put Some Information Here"><i class="icon-calendar"></i> May 1, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #1 </td>
-										<td>$100.00</td>
-										<td>$50.00</td>
-										<td width="15%">
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td width="1%">
-										<input type="checkbox"/>
-										</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td><a href="#" class="tooltip-left" title="Put Some Information Here"><i class="icon-calendar"></i> May 2, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #2</td>
-										<td>$200.00</td>
-										<td>$40.00</td>
-										<td>
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td>
-										<input type="checkbox"/>
-										</td>
-									</tr>
-									<tr>
-										<td>3</td>
-										<td><a href="#" class="tooltip-right" title="Put Some Information Here"><i class="icon-calendar"></i> May 3, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #3</td>
-										<td>$300.00</td>
-										<td>$30.00</td>
-										<td>
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td>
-										<input type="checkbox"/>
-										</td>
-									</tr>
-									<tr>
-										<td>4</td>
-										<td><a href="#"><i class="icon-calendar"></i> May 4, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #4</td>
-										<td>$400.00</td>
-										<td>$20.00</td>
-										<td>
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td>
-										<input type="checkbox"/>
-										</td>
-									</tr>
-									<tr>
-										<td>5</td>
-										<td><a href="#"><i class="icon-calendar"></i> May 5, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #5</td>
-										<td>$500.00</td>
-										<td>$10.00</td>
-										<td>
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td>
-										<input type="checkbox"/>
-										</td>
-									</tr>
-									<tr>
-										<td>6</td>
-										<td><a href="#"><i class="icon-calendar"></i> May 6, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #6</td>
-										<td>$600.00</td>
-										<td>$20.00</td>
-										<td>
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td>
-										<input type="checkbox"/>
-										</td>
-									</tr>
-									<tr>
-										<td>7</td>
-										<td><a href="#"><i class="icon-calendar"></i> May 7, 2012</a></td>
-										<td><i class="icon-file"></i> Invoice #7</td>
-										<td>$700.00</td>
-										<td>$30.00</td>
-										<td>
-										<div class="btn-group">
-											<a href="#" class="tooltip-top btn" title="Detail"><i class="icon-info-sign"></i></a>
-											<a href="#" class="tooltip-top btn" title="Edit"><i class="icon-list-alt"></i></a>
-										</div></td>
-										<td>
-										<input type="checkbox"/>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<div class="pull-right">
-								<button type="button" class="delete btn btn-warning">
-									<i class="icon-white icon-trash"></i> Delete Checked Box
-								</button>
-							</div>
-							<div class="pagination">
-								<ul>
-									<li>
-										<a href="#">&laquo;</a>
-									</li>
-									<li class="active">
-										<a href="#">1</a>
-									</li>
-									<li>
-										<a href="#">2</a>
-									</li>
-									<li>
-										<a href="#">3</a>
-									</li>
-									<li>
-										<a href="#">4</a>
-									</li>
-									<li>
-										<a href="#">&raquo;</a>
-									</li>
-								</ul>
-							</div>
-							</form>
-						</div>
+						<div class="span9" id="myDiv"></div>
 					</div>
 				</div>
 			</div>
@@ -330,3 +130,84 @@
 		<script src="assets/js/custom.js"></script>
 	</body>
 </html>
+<script type="text/javascript">
+	var data = [{
+        type: 'scattergeo',
+        mode: 'markers+text',
+        text: [
+            'London Regional', 'Grand River Regional', 'Juravinski Cancer Centre', 'Carlo Fidani Regional', 'Odette Cancer Centre',
+            'Princess Margaret', 'Southlake Regional Health Centre', 
+            'Cancer Centre of Southeastern Ontario', 'The Ottawa Hospital Cancer Centre', 
+            'Simcoe Muskoka Regional Cancer Centre', 'Northeast Cancer Centre', 'Regional Cancer Care Northwest'
+        ],
+        lon: [
+            -81.227970, -80.512337, -79.846150, -79.702798, -79.377493,
+            -79.390014, -79.452425, -76.491676, -75.647947, -79.661093, -80.995774, -89.269605
+        ],
+        lat: [
+            42.959748, 43.456454, 43.239889, 43.557726, 43.720618, 43.658205,
+            44.060668, 44.223064, 45.400749, 44.414109, 46.468666, 48.425427
+        ],
+        marker: {
+            size: [
+            		20, 30, 15, 10, 35,
+            		25, 35, 20, 15, 30,
+            		30, 15
+            ],
+            color: [
+                '#bebada', '#fdb462', '#fb8072', '#27442e', '#bc80bd',
+                '#b3de69', '#8dd3c7', '#80b1d3', '#d63727', '#485f8c',
+                '#273144', '#b657c3'
+            ],
+            line: {
+                width: 1
+            }
+        },
+        name: 'Cancer Cases per Hospital',
+        textposition: [
+            'top right', 'top left', 'top center', 'bottom right', 'top right',
+            'top left', 'bottom right', 'bottom left', 'top right', 'top right',
+            'bottom left', 'top right'
+        ],
+    }];
+
+    var layout = {  
+    	autosize: false,
+  		width: 1170,
+  		height: 800,
+  		margin: {
+    		l: 0,
+    		r: 0,
+    		b: 0,
+    		t: 25,
+    		pad: 4
+  		},      
+        font: {
+            family: 'Droid Serif, serif',
+            size: 8
+        },       
+        geo: {
+            scope: 'north america',
+            resolution: 50,
+
+            lonaxis: {
+                'range': [-90, -74]
+            },
+            lataxis: {
+                'range': [41, 49]
+            },
+            showrivers: true,
+            rivercolor: '#fff',
+            showlakes: true,
+            lakecolor: '#fff',
+            showland: true,
+            landcolor: '#EAEAAE',
+            countrycolor: '#d3d3d3',
+            countrywidth: 1.5,
+            subunitcolor: '#d3d3d3'
+        }        
+    };
+
+    Plotly.newPlot('myDiv', data, layout);
+</script>
+

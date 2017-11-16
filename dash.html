@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Aqueena Template | Dashboard</title>
+		<title>Care Project | Dashboard</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -110,13 +110,7 @@
 									<a href="./dash.html" >Dashboard <span class="label label-warning pull-right">1</span></a>
 								</li>
 								<li>
-									<a href="./table.html">Table</a>
-								</li>
-								<li>
-									<a href="./form.html">Form</a>
-								</li>
-								<li>
-									<a href="./tab.html">Tabular &amp; Accordion</a>
+									<a href="./table.html">Maps</a>
 								</li>
 							</ul>
 							<ul class="nav nav-tabs nav-stacked">
@@ -201,7 +195,7 @@
 	</body>
 </html>
 <script type="text/javascript">
-	var data = [{
+	var data = [{    
         type: 'scattergeo',
         mode: 'markers+text',
         text: [
@@ -241,7 +235,17 @@
         ],
     }];
 
-    var layout = {        
+    var layout = {
+        autosize: false,
+        width: 852,
+        height: 450,
+        margin: {
+          l: 0,
+          r: 0,
+          b: 0,
+          t: 25,
+          pad: 4
+        },        
         font: {
             family: 'Droid Serif, serif',
             size: 8
